@@ -1,148 +1,230 @@
+/* Global */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-/* UTILIS */
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+
+/* Utilities */
 .container{
-  width: 70%;
-  margin: 0px auto;
-  padding: 50px 0;
-  max-width: 1500px;
-  text-align: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .clearfix::after{
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
 
-.image{
+.float-left{
   float: left;
-  width: 50%;
 }
 
-.text{
-  float: left;
-  width: 50%;
-  font-size: larger;
-  text-align: justify;
-  padding: 50px 50px;
+.text-center{
+  text-align: center;
 }
 
+.logo img{
+  vertical-align: middle;
+}
 
-
-.button{
-  padding: 10px;
-  border-radius: 20px;
-  color: black;
-  text-decoration: none;
+.btn{
+  display: inline-block;
   background-color: white;
+  padding: 7px 15px;
+  line-height: 20px;
+  border-radius: 40px;
+  font-size: 14px;
+  color: #24272A;
+}
+
+.btn-big{
+  padding: 15px 25px;
+  font-size: 20px;
+}
+
+.btn-dark{
+  background-color: #24272A;
+  color: white;
+}
+
+.btn-blue{
+  background-color: #8ea1e1;
+  color: white;
+}
+
+.btn:hover{
+  color: #3161E0;
 }
 
 .gray{
-  background-color: darkgray;
+  background-color: #f6f6f6;
+  padding: 50px 0;
 }
 
-
-/* HEADER */
-header{
-  background-color: rgb(49, 97, 224);
+.image{
+  width: 60%;
 }
 
-header .box{
-  width: 70%;
-  margin: 0px auto;
-  text-align: center;
+.text{
+  width: 40%;
 }
 
-header .box .logo{
-  float: left;
-  vertical-align: middle;
-  margin-top: 5px;
+.text-blue{
+  color: #7289da;
 }
 
-header .box .menu{
-  float: left;
-  width: calc(100% - 70px);
-  vertical-align: middle;
-  line-height: 60px;
-}
-
-header .box button{
-  float: left;
-  vertical-align: middle;
-}
-
-header .box .menu nav{
-  text-align: center;
-}
-
-.box .menu nav ul li{
-  list-style: none;
-  display: inline;
-  padding: 10px;
-}
-
-.box .menu nav ul li a{
-  text-decoration: none;
+.white{
   color: white;
 }
 
 
-/* JUMBOTRON */
+/* Header */
+header{
+  height: 80px;
+  background-color: #3161E0;
+  line-height: 80px;
+  color: white;
+}
+
+.menu{
+  width: calc(100% - 200px);
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav li a{
+  color: white;
+}
+
+nav li a:hover{
+  text-decoration: underline;
+}
+
+
+/* Jumbotron */
 .jumbotron{
-  width: 100%;
-  height: 300px;
-  background-image: url(../img/jumbo.png);
-  text-align: center;
+  height: 500px;
+  padding: 80px;
+  color: white;
+  background-image: url('../img/jumbo.png');
   background-size: cover;
   background-position: center;
-  color: white;
 }
 
-.jumbotron .tittle{
-  width: 50%;
-  height: 200px;
-  margin-top: 50px;
-  display: inline-block;
+.jumbotron .content{
+  width: 800px;
+  margin: 0 auto;
 }
 
-.jumbotron .buttons{
-  margin-bottom: 100px;
+.jumbotron h1{
+  font-size: 50px;
+  margin-bottom: 40px;
 }
 
-.jumbotron .tittle h1{
-  margin-bottom: 20px;
+.jumbotron p{
+  font-size: 19px;
+  line-height: 30px;
+  margin-bottom: 40px;
 }
 
-/* Sections */
-
-.container .image img{
-  width: 100%;
+.jumbotron .content .btn:first-of-type{
+  margin-right: 20px;
 }
 
-.container .text h2{
-  margin-bottom: 30px;
-}
-
-
-.container .end-tittle{
-  width: 100%;
-}
-.container .big{
-  width: 100%;
+.jumbotron .content .btn:first-of-type i{
+  font-size: 15px;
 }
 
 
+/* Main*/
+main{
+  padding-top: 30px;
+}
 
-/* FOOTER */
+main section .container .text .text-col{
+  width: 70%;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+
+.text-col h2{
+  padding: 20px;
+  font-size: 30px;
+}
+
+.text-col p{
+  margin: 20px;
+  font-size: 20px;
+}
+
+.text-center h3{
+  padding-bottom: 20px;
+}
+
+.text-center h4{
+  padding-bottom: 30px;
+}
+
+
+/*Footer*/
 footer{
-  background-color: rgb(35, 39, 42);
+  background-color: #23272a;
+  padding-top: 50px;
 }
+
+footer .footer-col{
+  padding: 15px  0;
+}
+
+footer .container .first{
+  width: 40%;
+}
+
+.second, .third, .fourth{
+  width: 15%;
+}
+
+.container .first h4{
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.container .first img{
+  vertical-align: middle;
+}
+
+.container .first .flag{
+  padding-bottom: 10px;
+}
+
+footer .container a{
+  float: right;
+}
+
+footer .container img{
+  float: left;
+}
+
 
 
 
